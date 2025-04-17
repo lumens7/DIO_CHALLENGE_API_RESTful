@@ -23,7 +23,7 @@ public class User {
     private String name;
 
     @OneToOne(cascade = CascadeType.ALL)
-    private Accont accont;
+    private Account account;
 
     @OneToOne(cascade = CascadeType.ALL)
     private Card card;

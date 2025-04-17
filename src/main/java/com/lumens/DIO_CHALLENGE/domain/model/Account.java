@@ -13,7 +13,7 @@ import java.math.BigDecimal;
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity(name = "tb_acconunt")
-public class Accont {
+public class Account {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -24,9 +24,9 @@ public class Accont {
 
     private String agency;
 
-    @Column(scale = 13, precision = 2)
+    @Column(precision = 13, scale = 2)
     private BigDecimal balence;
 
-    @Column(name = "additional_limit", scale = 13, precision = 2)
+    @Column(name = "additional_limit", precision = 13, scale = 2)
     private BigDecimal limit;
 }
