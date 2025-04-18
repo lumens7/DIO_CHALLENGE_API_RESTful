@@ -1,0 +1,1 @@
+web: java -jar target/DIO_CHALLENGE-0.0.1-SNAPSHOT.jar
